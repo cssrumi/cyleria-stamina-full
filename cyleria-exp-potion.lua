@@ -1,3 +1,4 @@
+-- works only if exp potion is visible in your containers
 macro(30*1000, "EXP POTION", function()
     if player:getHealth() < 90 then
         warn('health to low to use exp potion: ' .. player:getHealth())
@@ -21,4 +22,5 @@ macro(30*1000, "EXP POTION", function()
         end
     end
     warn('exp potion not found')
+    warn('remember that exp potion must be visible to be clickable')
 end)
