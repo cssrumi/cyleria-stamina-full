@@ -1,5 +1,5 @@
 -- works only if lord exp is visible in your containers
-macro(30*1000, "EXP POTION", function()
+macro(30*1000, "LORD EXP", function()
     if player:getHealth() < 90 then
         warn('health to low to use lord exp: ' .. player:getHealth())
         delay(1000)
